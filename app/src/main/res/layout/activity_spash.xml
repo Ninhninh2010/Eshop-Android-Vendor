@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="spashVM" type="com.nguyenvansapplication.app.modules.spash.data.viewmodel.SpashVM"/>
+    </data>
+    <FrameLayout android:id="@+id/frameSpash"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent" style="@style/groupStylewhite_1">
+        <ImageView android:id="@+id/imageImageremovebg"
+            android:layout_gravity="top|end"
+            android:layout_height="@dimen/_203pxh"
+            android:layout_marginBottom="@dimen/_20pxv"
+            android:layout_marginEnd="@dimen/_74pxh"
+            android:layout_marginStart="@dimen/_74pxh"
+            android:layout_marginTop="@dimen/_274pxv"
+            android:layout_width="@dimen/_203pxh"
+            android:scaleType="fitXY"
+            imageRes="@{@drawable/img_imageremovebg}"
+            tools:ignore="ContentDescription" tools:src="@drawable/img_imageremovebg"/>
+        <ImageView android:id="@+id/imageImageOne"
+            android:layout_gravity="end"
+            android:layout_height="@dimen/_60pxh"
+            android:layout_marginBottom="@dimen/_370pxv"
+            android:layout_marginEnd="@dimen/_133pxh"
+            android:layout_marginStart="@dimen/_133pxh"
+            android:layout_marginTop="@dimen/_370pxv"
+            android:layout_width="@dimen/_60pxh"
+            android:scaleType="fitXY" imageRes="@{@drawable/img_image1}"
+            tools:ignore="ContentDescription" tools:src="@drawable/img_image1"/>
+    </FrameLayout>
+</layout>
