@@ -19,37 +19,49 @@
             <LinearLayout android:id="@+id/linearStatusbar"
                 android:layout_height="wrap_content"
                 android:layout_width="match_parent" android:orientation="horizontal">
-                <LinearLayout android:id="@+id/linearRowvolume"
-                    android:layout_height="wrap_content"
+
+                <LinearLayout
+                    android:id="@+id/linearRowvolume"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
                     android:layout_marginTop="@dimen/_1pxv"
-                    android:layout_weight="0.19"
-                    android:layout_width="0dp" android:orientation="horizontal">
-                    <ImageView android:id="@+id/imageVolume"
-                        android:layout_height="@dimen/_9pxh"
-                        android:layout_marginBottom="@dimen/_3pxv"
-                        android:layout_marginTop="@dimen/_2pxv"
+
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imageVolume"
                         android:layout_width="@dimen/_14pxh"
+                        android:layout_height="15dp"
+                        android:layout_marginTop="@dimen/_2pxv"
+                        android:layout_marginBottom="@dimen/_3pxv"
                         android:scaleType="fitXY"
                         android:src="@drawable/img_volume"
-                        tools:ignore="ContentDescription" tools:src="@drawable/img_volume"/>
-                    <TextView android:ellipsize="end"
+                        tools:ignore="ContentDescription"
+                        tools:src="@drawable/img_volume" />
+
+                    <TextView
                         android:id="@+id/txtGS"
-                        android:layout_height="wrap_content"
+                        style="@style/txtSFProTextregular12"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
                         android:layout_marginStart="@dimen/_4pxh"
                         android:layout_weight="0.41"
-                        android:layout_width="0dp"
+                        android:ellipsize="end"
                         android:singleLine="true"
                         android:text="@{mainshopVM.mainshopModel.txtGS}"
-                        style="@style/txtSFProTextregular12" tools:text="@string/lbl_ms"/>
-                    <ImageView android:id="@+id/imageSignal"
+                        tools:text="@string/lbl_ms" />
+
+                    <ImageView
+                        android:id="@+id/imageSignal"
+                        android:layout_width="@dimen/_13pxh"
                         android:layout_height="@dimen/_9pxh"
-                        android:layout_marginBottom="@dimen/_3pxv"
                         android:layout_marginStart="@dimen/_1pxh"
                         android:layout_marginTop="@dimen/_3pxv"
-                        android:layout_width="@dimen/_13pxh"
+                        android:layout_marginBottom="@dimen/_3pxv"
                         android:scaleType="fitXY"
                         android:src="@drawable/img_signal"
-                        tools:ignore="ContentDescription" tools:src="@drawable/img_signal"/>
+                        tools:ignore="ContentDescription"
+                        tools:src="@drawable/img_signal" />
                 </LinearLayout>
                 <LinearLayout android:id="@+id/linearRowtime"
                     android:layout_height="wrap_content"
@@ -90,7 +102,8 @@
         <ScrollView android:clipToPadding="false"
             android:fillViewport="true"
             android:id="@+id/scrollViewScrollview"
-            android:layout_gravity="center" android:layout_height="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="70dp"
             android:layout_marginEnd="@dimen/_3pxh"
             android:layout_weight="1" android:layout_width="match_parent">
             <FrameLayout android:id="@+id/frameMainShop"
@@ -115,12 +128,10 @@
                     style="@style/txtRobotobold18" tools:text="@string/lbl_kho_h_ng"/>
                 <LinearLayout
                     android:id="@+id/linearRowrectanglethirtytwo"
-                    android:layout_gravity="top|start"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="@dimen/_94pxv"
                     android:layout_marginEnd="@dimen/_20pxh"
                     android:layout_marginStart="@dimen/_20pxh"
-                    android:layout_marginTop="@dimen/_94pxv"
                     android:layout_width="match_parent"
                     android:orientation="horizontal" style="@style/groupStylewhite_A700cornerRadius">
                     <ImageView android:id="@+id/imageRectangleThirtyTwo"
@@ -207,6 +218,7 @@
                             android:layout_marginStart="@dimen/_4pxh"
                             android:layout_marginTop="@dimen/_7pxv"
                             android:layout_width="match_parent" android:orientation="horizontal">
+
                             <ImageView
                                 android:id="@+id/imageIcons8bathtub"
                                 android:layout_height="@dimen/_10pxh"
@@ -276,6 +288,30 @@
                             android:text="@{mainshopVM.mainshopModel.txtPrice}"
                             style="@style/txtRobotomedium14" tools:text="@string/lbl_price"/>
                     </LinearLayout>
+
+                    <FrameLayout
+                        android:id="@+id/frameBackground"
+                        style="@style/groupStylewhite_1"
+                        android:layout_width="@dimen/_402pxh"
+                        android:layout_height="@dimen/_812pxv"
+                        android:layout_gravity="start"
+                        android:layout_marginBottom="@dimen/_10pxv">
+
+
+                    </FrameLayout>
+
+                    <ImageView
+                        android:id="@+id/imageShapeBG"
+                        android:layout_width="@dimen/_346pxh"
+                        android:layout_height="@dimen/_523pxh"
+                        android:layout_gravity="bottom|end"
+                        android:layout_marginStart="@dimen/_10pxh"
+                        android:layout_marginTop="@dimen/_78pxv"
+                        android:layout_marginBottom="@dimen/_78pxv"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/img_shapebg"
+                        tools:ignore="ContentDescription"
+                        tools:src="@drawable/img_shapebg" />
                 </LinearLayout>
                 <ImageView android:id="@+id/imageSlide"
                     android:layout_gravity="top|start"
@@ -288,22 +324,7 @@
                     android:scaleType="fitXY"
                     android:src="@drawable/img_slide"
                     tools:ignore="ContentDescription" tools:src="@drawable/img_slide"/>
-                <FrameLayout android:id="@+id/frameBackground"
-                    android:layout_gravity="start"
-                    android:layout_height="@dimen/_812pxv"
-                    android:layout_marginBottom="@dimen/_10pxv"
-                    android:layout_width="@dimen/_402pxh" style="@style/groupStylewhite_1">
-                    <ImageView android:id="@+id/imageShapeBG"
-                        android:layout_gravity="bottom|end"
-                        android:layout_height="@dimen/_523pxh"
-                        android:layout_marginBottom="@dimen/_78pxv"
-                        android:layout_marginStart="@dimen/_10pxh"
-                        android:layout_marginTop="@dimen/_78pxv"
-                        android:layout_width="@dimen/_346pxh"
-                        android:scaleType="fitXY"
-                        android:src="@drawable/img_shapebg"
-                        tools:ignore="ContentDescription" tools:src="@drawable/img_shapebg"/>
-                </FrameLayout>
+
                 <LinearLayout android:id="@+id/linearRowtransfers"
                     android:layout_gravity="bottom|start"
                     android:layout_height="wrap_content"
@@ -535,15 +556,18 @@
                             android:singleLine="true"
                             android:text="@{mainshopVM.mainshopModel.txtBUSINESSACCPL}"
                             style="@style/txtMontserratsemibold7" tools:text="@string/msg_business_acc_pl"/>
-                        <TextView android:ellipsize="end"
+
+                        <TextView
                             android:id="@+id/txt000015554775333"
-                            android:layout_height="wrap_content"
-                            android:layout_marginEnd="@dimen/_10pxh"
-                            android:layout_marginTop="@dimen/_12pxv"
+                            style="@style/txtMontserratmedium7_1"
                             android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_12pxv"
+                            android:layout_marginEnd="@dimen/_10pxh"
+                            android:ellipsize="end"
                             android:singleLine="true"
                             android:text="@{mainshopVM.mainshopModel.txt000015554775333}"
-                            style="@style/txtMontserratmedium7_1" tools:text="@string/msg_000015554775333"/>
+                            tools:text="@string/msg_000015554775333" />
                     </LinearLayout>
                     <TextView android:ellipsize="end"
                         android:id="@+id/txtAvailableBalan"
@@ -598,44 +622,50 @@
             <LinearLayout android:id="@+id/linearRowcalendar"
                 android:layout_height="match_parent"
                 android:layout_width="match_parent" android:orientation="horizontal">
-                <LinearLayout android:id="@+id/linearRowarrowdown"
-                    android:layout_height="wrap_content"
+
+                <LinearLayout
+                    android:id="@+id/linearRowarrowdown"
+                    android:layout_width="473dp"
+                    android:layout_height="match_parent"
                     android:layout_weight="0.9"
-                    android:layout_width="0dp" android:orientation="horizontal">
-                    <ImageView android:id="@+id/imageArrowdown"
-                        android:layout_height="@dimen/_32pxh"
-                        android:layout_marginTop="@dimen/_28pxv"
-                        android:layout_width="@dimen/_31pxh"
-                        android:scaleType="fitXY"
-                        android:src="@drawable/img_arrowdown"
-                        tools:ignore="ContentDescription" tools:src="@drawable/img_arrowdown"/>
-                    <ImageView android:id="@+id/imageMenu"
-                        android:layout_height="@dimen/_21pxh"
-                        android:layout_marginBottom="@dimen/_4pxv"
+                    android:orientation="horizontal">
+
+
+                    <ImageView
+                        android:id="@+id/imageMenu"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
                         android:layout_marginStart="@dimen/_46pxh"
-                        android:layout_marginTop="@dimen/_35pxv"
-                        android:layout_width="@dimen/_27pxh"
+
+                        android:layout_marginBottom="@dimen/_4pxv"
                         android:scaleType="fitXY"
                         android:src="@drawable/img_menu"
-                        tools:ignore="ContentDescription" tools:src="@drawable/img_menu"/>
+                        tools:ignore="ContentDescription"
+                        tools:src="@drawable/img_menu" />
 
                     <com.google.android.material.floatingactionbutton.FloatingActionButton
                         android:id="@+id/floatingBtnFloatingactionbutton"
-                        android:layout_height="wrap_content"
-                        android:layout_marginBottom="@dimen/_2pxv"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
                         android:layout_marginStart="@dimen/_26pxh"
-                        android:layout_weight="0.41"
-                        android:layout_width="0dp"
-                        app:srcCompat="@drawable/img_home_deep_purple_a703" app:tint="#673AB7"/>
-                    <ImageView android:id="@+id/imageGlobe"
-                        android:layout_height="@dimen/_31pxh"
                         android:layout_marginBottom="@dimen/_2pxv"
+
+                        app:srcCompat="@drawable/img_home_deep_purple_a703"
+                        app:tint="#673AB7" />
+
+                    <ImageView
+                        android:id="@+id/imageGlobe"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
                         android:layout_marginStart="@dimen/_26pxh"
-                        android:layout_marginTop="@dimen/_27pxv"
-                        android:layout_width="@dimen/_28pxh"
+
+                        android:layout_marginBottom="@dimen/_2pxv"
                         android:scaleType="fitXY"
                         android:src="@drawable/img_globe"
-                        tools:ignore="ContentDescription" tools:src="@drawable/img_globe"/>
+                        tools:ignore="ContentDescription"
+                        tools:src="@drawable/img_globe" />
+
+
                 </LinearLayout>
                 <ImageView android:id="@+id/imageCalendar"
                     android:layout_height="@dimen/_29pxh"
@@ -648,5 +678,6 @@
                     tools:ignore="ContentDescription" tools:src="@drawable/img_calendar"/>
             </LinearLayout>
         </FrameLayout>
+
     </FrameLayout>
 </layout>

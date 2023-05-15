@@ -53,39 +53,44 @@
                     android:layout_weight="0.16"
                     android:layout_width="0dp"
                     android:orientation="vertical" style="@style/groupStylewhite_2">
+
                     <ImageButton
-                        android:background="@drawable/rectangle_bg_blue_800_radius_20"
                         android:id="@+id/btnArrowup"
-                        android:layout_gravity="start"
-                        android:layout_height="@dimen/_40pxh"
                         android:layout_width="@dimen/_40pxh"
+                        android:layout_height="@dimen/_40pxh"
+
+                        android:background="@drawable/rectangle_bg_blue_800_radius_20"
                         android:paddingHorizontal="@dimen/_10pxh"
                         android:paddingVertical="@dimen/_10pxv"
                         android:scaleType="fitCenter"
-                        android:src="@drawable/img_arrowup" tools:ignore="ContentDescription"/>
+                        android:src="@drawable/img_arrowup"
+                        tools:ignore="ContentDescription" />
                 </LinearLayout>
+
                 <EditText
+                    android:id="@+id/etSearch"
+                    style="@style/etSolidRounded"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_16pxh"
+                    android:layout_marginTop="@dimen/_16pxv"
+                    android:layout_marginEnd="@dimen/_72pxh"
+                    android:layout_marginBottom="@dimen/_16pxv"
+                    android:layout_weight="0.84"
                     android:background="@drawable/rectangle_bg_white_a700_radius_22"
                     android:ellipsize="end"
                     android:hint="@string/lbl_input"
-                    android:id="@+id/etSearch" android:inputType="text"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="@dimen/_16pxv"
-                    android:layout_marginEnd="@dimen/_72pxh"
-                    android:layout_marginStart="@dimen/_16pxh"
-                    android:layout_marginTop="@dimen/_16pxv"
-                    android:layout_weight="0.84"
-                    android:layout_width="0dp"
+                    android:inputType="text"
                     android:letterSpacing="0.01"
                     android:lineSpacingExtra="@dimen/_3pxh"
-                    android:paddingBottom="@dimen/_11pxv"
-                    android:paddingEnd="@dimen/_30pxh"
                     android:paddingStart="@dimen/_16pxh"
                     android:paddingTop="@dimen/_13pxv"
+                    android:paddingEnd="@dimen/_30pxh"
+                    android:paddingBottom="@dimen/_11pxv"
                     android:singleLine="true"
                     android:text="@={messageVM.messageModel.etSearchValue}"
                     android:textColorHint="@color/gray_902"
-                    style="@style/etSolidRounded" tools:ignore="Autofill"/>
+                    tools:ignore="Autofill" />
             </LinearLayout>
             <LinearLayout android:gravity="start"
                 android:id="@+id/linearStateSendmess1"
@@ -130,7 +135,7 @@
                     <ImageButton
                         android:background="@drawable/rectangle_bg_blue_800_radius_20"
                         android:id="@+id/btnArrowupOne"
-                        android:layout_gravity="start"
+
                         android:layout_height="@dimen/_40pxh"
                         android:layout_width="@dimen/_40pxh"
                         android:paddingHorizontal="@dimen/_10pxh"

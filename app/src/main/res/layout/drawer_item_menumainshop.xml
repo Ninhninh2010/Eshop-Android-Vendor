@@ -7,7 +7,7 @@
         android:id="@+id/linearMenuMainShop"
         android:layout_height="match_parent"
         android:layout_width="match_parent" android:orientation="vertical">
-        <LinearLayout android:gravity="center_horizontal"
+        <LinearLayout
             android:id="@+id/linearColumn"
             android:layout_height="match_parent"
             android:layout_marginEnd="@dimen/_9pxh"
@@ -18,12 +18,12 @@
                 android:id="@+id/linearColumngrouptwenty"
                 android:layout_height="match_parent"
                 android:layout_marginEnd="@dimen/_168pxh"
-                android:layout_width="match_parent"
+                android:layout_width="200dp"
                 android:orientation="vertical" style="@style/groupStylewhite_A700">
-                <LinearLayout android:gravity="end"
+                <LinearLayout android:gravity="start"
                     android:id="@+id/linearColumnuser"
                     android:layout_height="wrap_content"
-                    android:layout_width="match_parent"
+                    android:layout_width="200dp"
                     android:orientation="vertical" style="@style/groupStyledeep_purple_A400">
                     <ImageView android:id="@+id/imageUser"
                         android:layout_gravity="center_horizontal"
@@ -35,7 +35,7 @@
                         android:scaleType="fitXY"
                         android:src="@drawable/img_user"
                         tools:ignore="ContentDescription" tools:src="@drawable/img_user"/>
-                    <TextView android:ellipsize="end"
+                    <TextView
                         android:id="@+id/txtMdAshadullaH"
                         android:layout_gravity="start"
                         android:layout_height="wrap_content"
@@ -46,7 +46,7 @@
                         android:singleLine="true"
                         android:text="@{drawerItemMenumainshopModel.txtMdAshadullaH}"
                         style="@style/txtMontserratbold8" tools:text="@string/msg_md_ashadulla_h"/>
-                    <TextView android:ellipsize="end"
+                    <TextView
                         android:id="@+id/txtTime"
                         android:layout_gravity="start"
                         android:layout_height="wrap_content"
@@ -57,7 +57,7 @@
                         android:singleLine="true"
                         android:text="@{drawerItemMenumainshopModel.txtTime}"
                         style="@style/txtMontserratlight6" tools:text="@string/msg_last_login_14"/>
-                    <TextView android:ellipsize="end"
+                    <TextView
                         android:id="@+id/txtTimeOne"
                         android:layout_gravity="start"
                         android:layout_height="wrap_content"
@@ -74,8 +74,6 @@
                     android:background="@drawable/rectangle_bg_purple_50"
                     android:drawablePadding="@dimen/_10pxh"
                     android:drawableStart="@drawable/img_home"
-                    android:ellipsize="end"
-                    android:hint="@string/lbl_home"
                     android:id="@+id/etGroupTwenty"
                     android:inputType="text"
                     android:layout_height="wrap_content"
@@ -85,62 +83,62 @@
                     android:paddingStart="@dimen/_17pxh"
                     android:paddingTop="@dimen/_15pxv"
                     android:singleLine="true"
-                    android:text="@={drawerItemMenumainshopModel.etGroupTwentyValue}"
-                    android:textColorHint="@color/purple_400"
+                    android:text="@string/lbl_home"
+
                     style="@style/etSolid" tools:ignore="Autofill"/>
-                <Spinner
-                    android:background="@drawable/layer_list_border_gray_500_7f"
-                    android:id="@+id/spinnerGroupThirty"
-                    android:layout_height="wrap_content"
-                    android:layout_width="match_parent" tools:listitem="@layout/spinner_item"/>
-                <TextView android:ellipsize="end"
+
+
+                <TextView
                     android:id="@+id/txtGroupTwentyNine"
+                    style="@style/txtOutline"
+                    android:layout_width="200dp"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="@dimen/_1pxv"
-                    android:layout_width="match_parent"
-                    android:paddingBottom="@dimen/_26pxv"
+                    android:layout_marginTop="@dimen/_2pxv"
                     android:paddingStart="@dimen/_12pxh"
                     android:paddingTop="@dimen/_11pxv"
-                    android:singleLine="true"
-                    android:text="@{drawerItemMenumainshopModel.txtGroupTwentyNine}"
-                    style="@style/txtOutline" tools:text="@string/lbl_s_n_ph_m"/>
-                <TextView android:ellipsize="end"
+                    android:paddingBottom="@dimen/_26pxv"
+                    android:text="@string/lbl_s_n_ph_m"
+                    tools:text="@string/lbl_s_n_ph_m" />
+
+                <TextView
                     android:id="@+id/txtGroupTwentyEight"
+                    style="@style/txtOutline"
+                    android:layout_width="200dp"
                     android:layout_height="wrap_content"
-                    android:layout_width="match_parent"
-                    android:paddingBottom="@dimen/_23pxv"
+                    android:paddingBottom="@dimen/_24pxv"
                     android:paddingStart="@dimen/_13pxh"
                     android:paddingTop="@dimen/_14pxv"
-                    android:singleLine="true"
-                    android:text="@{drawerItemMenumainshopModel.txtGroupTwentyEight}"
-                    style="@style/txtOutline" tools:text="@string/lbl_kh_ch_h_ng"/>
-                <TextView android:ellipsize="end"
+
+                    android:text="@string/lbl_kh_ch_h_ng"
+                    tools:text="@string/lbl_kh_ch_h_ng" />
+
+                <TextView
                     android:id="@+id/txtGroupTwentySeven"
                     android:layout_height="wrap_content"
-                    android:layout_width="match_parent"
+                    android:layout_width="200dp"
                     android:paddingBottom="@dimen/_24pxv"
                     android:paddingStart="@dimen/_13pxh"
                     android:paddingTop="@dimen/_14pxv"
                     android:singleLine="true"
-                    android:text="@{drawerItemMenumainshopModel.txtGroupTwentySeven}"
+                    android:text="@string/msg_qu_n_l_doanh_t"
                     style="@style/txtOutline" tools:text="@string/msg_qu_n_l_doanh_t"/>
-                <TextView android:ellipsize="end"
+                <TextView
                     android:id="@+id/txtGroupTwentySix"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/_1pxv"
-                    android:layout_width="match_parent"
+                    android:layout_width="200dp"
                     android:paddingBottom="@dimen/_24pxv"
                     android:paddingStart="@dimen/_15pxh"
                     android:paddingTop="@dimen/_14pxv"
                     android:singleLine="true"
-                    android:text="@{drawerItemMenumainshopModel.txtGroupTwentySix}"
+                    android:text="@string/msg_qu_n_l_n_h_n"
                     style="@style/txtOutline" tools:text="@string/msg_qu_n_l_n_h_n"/>
                 <LinearLayout android:gravity="center_horizontal"
                     android:id="@+id/linearColumnhthngcah"
                     android:layout_height="wrap_content"
-                    android:layout_width="match_parent"
+                    android:layout_width="200dp"
                     android:orientation="vertical" style="@style/groupStyle">
-                    <TextView android:gravity="start"
+                    <TextView
                         android:id="@+id/txtHthngcah"
                         android:layout_height="match_parent"
                         android:layout_marginBottom="@dimen/_13pxv"
@@ -148,50 +146,43 @@
                         android:layout_marginStart="@dimen/_15pxh"
                         android:layout_marginTop="@dimen/_13pxv"
                         android:layout_width="match_parent"
-                        android:text="@{drawerItemMenumainshopModel.txtHthngcah}"
+                        android:text="@string/msg_h_th_ng_c_a_h"
                         style="@style/txtMontserratmedium8" tools:text="@string/msg_h_th_ng_c_a_h"/>
                 </LinearLayout>
-                <TextView android:ellipsize="end"
-                    android:id="@+id/txtGroupTwentyFour"
-                    android:layout_height="wrap_content"
-                    android:layout_width="match_parent"
-                    android:paddingBottom="@dimen/_24pxv"
-                    android:paddingStart="@dimen/_15pxh"
-                    android:paddingTop="@dimen/_14pxv"
-                    android:singleLine="true"
-                    android:text="@{drawerItemMenumainshopModel.txtGroupTwentyFour}"
-                    style="@style/txtOutline" tools:text="@string/lbl_c_i_t"/>
-                <TextView android:ellipsize="end"
+
+
+
+                <TextView
                     android:id="@+id/txtGroupTwentyThree"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/_1pxv"
-                    android:layout_width="match_parent"
+                    android:layout_width="200dp"
                     android:paddingBottom="@dimen/_24pxv"
                     android:paddingStart="@dimen/_15pxh"
                     android:paddingTop="@dimen/_13pxv"
                     android:singleLine="true"
-                    android:text="@{drawerItemMenumainshopModel.txtGroupTwentyThree}"
+                    android:text="@string/lbl_others"
                     style="@style/txtOutline" tools:text="@string/lbl_others"/>
-                <TextView android:ellipsize="end"
+                <TextView
                     android:id="@+id/txtGroupTwentyTwo"
                     android:layout_height="wrap_content"
-                    android:layout_width="match_parent"
+                    android:layout_width="200dp"
                     android:paddingBottom="@dimen/_24pxv"
                     android:paddingStart="@dimen/_15pxh"
                     android:paddingTop="@dimen/_13pxv"
                     android:singleLine="true"
-                    android:text="@{drawerItemMenumainshopModel.txtGroupTwentyTwo}"
+                    android:text="@string/lbl_contact_admin"
                     style="@style/txtOutline" tools:text="@string/lbl_contact_admin"/>
-                <TextView android:ellipsize="end"
+                <TextView
                     android:id="@+id/txtGroupTwentyOne"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="@dimen/_20pxv"
-                    android:layout_width="match_parent"
+                    android:layout_width="200dp"
                     android:paddingBottom="@dimen/_23pxv"
                     android:paddingStart="@dimen/_15pxh"
                     android:paddingTop="@dimen/_14pxv"
                     android:singleLine="true"
-                    android:text="@{drawerItemMenumainshopModel.txtGroupTwentyOne}"
+                    android:text="@string/lbl_logout"
                     style="@style/txtOutline_1" tools:text="@string/lbl_logout"/>
             </LinearLayout>
         </LinearLayout>

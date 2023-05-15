@@ -1,5 +1,6 @@
 package com.nguyenvansapplication.app.appcomponents.base
 
+import android.content.Context
 import android.os.Bundle
 import androidx.annotation.LayoutRes
 import androidx.appcompat.app.AppCompatActivity
@@ -15,6 +16,8 @@ import androidx.databinding.ViewDataBinding
 abstract class BaseActivity<T : ViewDataBinding>(@LayoutRes val layoutId: Int) :
     AppCompatActivity(), BaseControllerFunctionsImpl {
 
+
+
     /**
      * activity layout view binding object
      */
@@ -28,4 +31,6 @@ abstract class BaseActivity<T : ViewDataBinding>(@LayoutRes val layoutId: Int) :
         setUpClicks()
         onInitialized()
     }
+
+
 }

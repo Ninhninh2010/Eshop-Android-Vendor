@@ -116,16 +116,20 @@
             android:singleLine="true"
             android:text="@{donhuyVM.donhuyModel.txtQunlnhn}"
             style="@style/txtRobotobold18" tools:text="@string/msg_qu_n_l_n_h_n"/>
-        <TextView android:ellipsize="end" android:id="@+id/txtNhy"
+
+        <TextView
+            android:id="@+id/txtNhy"
+            style="@style/txtRobotobold18"
+            android:layout_width="wrap_content"
+            android:layout_height="39dp"
             android:layout_gravity="start"
-            android:layout_height="wrap_content"
-            android:layout_marginEnd="@dimen/_27pxh"
             android:layout_marginStart="@dimen/_27pxh"
             android:layout_marginTop="@dimen/_20pxv"
-            android:layout_width="wrap_content"
+            android:layout_marginEnd="@dimen/_27pxh"
+            android:ellipsize="end"
             android:singleLine="true"
             android:text="@{donhuyVM.donhuyModel.txtNhy}"
-            style="@style/txtRobotobold18" tools:text="@string/lbl_n_h_y"/>
+            tools:text="@string/lbl_n_h_y" />
         <LinearLayout android:gravity="start"
             android:id="@+id/linearRowrectanglethirtytwo"
             android:layout_height="wrap_content"
@@ -271,14 +275,8 @@
                     style="@style/txtRobotomedium14" tools:text="@string/lbl_price"/>
             </LinearLayout>
         </LinearLayout>
-        <View
-            android:background="@drawable/rectangle_bg_gray_50_radius_8"
-            android:id="@+id/viewRectangleThirtySeven"
-            android:layout_gravity="end"
-            android:layout_height="@dimen/_16pxv"
-            android:layout_marginEnd="@dimen/_94pxh"
-            android:layout_marginStart="@dimen/_94pxh"
-            android:layout_marginTop="@dimen/_138pxv" android:layout_width="@dimen/_45pxh"/>
+
+
         <TextView android:ellipsize="end" android:id="@+id/txtSlng"
             android:layout_gravity="end"
             android:layout_height="wrap_content"

@@ -1,5 +1,6 @@
 package com.nguyenvansapplication.app.modules.spash.ui
 
+import android.content.Context
 import android.os.Handler
 import android.os.Looper
 import androidx.activity.viewModels
@@ -11,8 +12,9 @@ import com.nguyenvansapplication.app.modules.spash.`data`.viewmodel.SpashVM
 import kotlin.String
 import kotlin.Unit
 
-class SpashActivity : BaseActivity<ActivitySpashBinding>(R.layout.activity_spash) {
+class SpashActivity() : BaseActivity<ActivitySpashBinding>(R.layout.activity_spash) {
   private val viewModel: SpashVM by viewModels<SpashVM>()
+
 
   override fun onInitialized(): Unit {
     viewModel.navArguments = intent.extras?.getBundle("bundle")

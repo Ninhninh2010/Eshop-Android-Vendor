@@ -134,15 +134,20 @@
             android:layout_marginTop="@dimen/_18pxv"
             android:layout_width="match_parent"
             android:orientation="horizontal" style="@style/groupStylewhite_A700cornerRadius">
-            <ImageView android:id="@+id/imageRectangleThirtyTwo"
+
+            <ImageView
+                android:id="@+id/imageRectangleThirtyTwo"
+                cornerRadius="@{@dimen/_4pxh}"
+                imageRes="@{@drawable/img_rectangle32}"
+                android:layout_width="@dimen/_120pxh"
                 android:layout_height="@dimen/_129pxh"
-                android:layout_marginBottom="@dimen/_8pxv"
                 android:layout_marginStart="@dimen/_8pxh"
                 android:layout_marginTop="@dimen/_8pxv"
-                android:layout_width="@dimen/_120pxh"
-                android:scaleType="fitXY" cornerRadius="@{@dimen/_4pxh}"
-                imageRes="@{@drawable/img_rectangle32}"
-                tools:ignore="ContentDescription" tools:src="@drawable/img_rectangle32"/>
+                android:layout_marginBottom="@dimen/_8pxv"
+                android:scaleType="fitXY"
+                tools:ignore="ContentDescription"
+                tools:src="@drawable/img_rectangle32" />
+
             <LinearLayout android:gravity="start"
                 android:id="@+id/linearColumndparagonbukit"
                 android:layout_height="wrap_content"
@@ -269,6 +274,7 @@
                     android:singleLine="true"
                     android:text="@{donthanhcongVM.donthanhcongModel.txtPrice}"
                     style="@style/txtRobotomedium14" tools:text="@string/lbl_price"/>
+
             </LinearLayout>
         </LinearLayout>
         <View
@@ -279,16 +285,21 @@
             android:layout_marginEnd="@dimen/_94pxh"
             android:layout_marginStart="@dimen/_94pxh"
             android:layout_marginTop="@dimen/_138pxv" android:layout_width="@dimen/_45pxh"/>
-        <TextView android:ellipsize="end" android:id="@+id/txtTngtin"
+
+        <TextView
+            android:id="@+id/txtTngtin"
+            style="@style/txtRobotomedium14"
+            android:layout_width="46dp"
+            android:layout_height="39dp"
             android:layout_gravity="end"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="@dimen/_20pxv"
-            android:layout_marginEnd="@dimen/_45pxh"
             android:layout_marginStart="@dimen/_45pxh"
-            android:layout_marginTop="@dimen/_226pxv"
-            android:layout_width="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="@dimen/_45pxh"
+            android:layout_marginBottom="@dimen/_20pxv"
+            android:ellipsize="end"
             android:singleLine="true"
             android:text="@{donthanhcongVM.donthanhcongModel.txtTngtin}"
-            style="@style/txtRobotomedium14" tools:text="@string/lbl_t_ng_ti_n"/>
+            tools:text="@string/lbl_t_ng_ti_n" />
+
     </LinearLayout>
 </layout>

@@ -281,151 +281,201 @@
             android:singleLine="true"
             android:text="@{quanlydonhangVM.quanlydonhangModel.txtNhy}"
             style="@style/txtRobotobold18" tools:text="@string/lbl_n_h_y"/>
-        <LinearLayout android:gravity="start"
+
+        <LinearLayout
             android:id="@+id/linearRowrectanglethirtyfive"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="@dimen/_269pxv"
-            android:layout_marginEnd="@dimen/_12pxh"
+            style="@style/groupStylewhite_A700cornerRadius"
+            android:layout_width="match_parent"
+            android:layout_height="211dp"
             android:layout_marginStart="@dimen/_12pxh"
             android:layout_marginTop="@dimen/_12pxv"
-            android:layout_width="match_parent"
-            android:orientation="horizontal" style="@style/groupStylewhite_A700cornerRadius">
-            <ImageView android:id="@+id/imageRectangleThirtyFive"
+            android:layout_marginEnd="@dimen/_12pxh"
+            android:layout_marginBottom="@dimen/_269pxv"
+            android:gravity="start"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imageRectangleThirtyFive"
+                cornerRadius="@{@dimen/_4pxh}"
+                imageRes="@{@drawable/img_rectangle32}"
+                android:layout_width="@dimen/_120pxh"
                 android:layout_height="@dimen/_129pxh"
-                android:layout_marginBottom="@dimen/_8pxv"
                 android:layout_marginStart="@dimen/_8pxh"
                 android:layout_marginTop="@dimen/_8pxv"
-                android:layout_width="@dimen/_120pxh"
-                android:scaleType="fitXY" cornerRadius="@{@dimen/_4pxh}"
-                imageRes="@{@drawable/img_rectangle32}"
-                tools:ignore="ContentDescription" tools:src="@drawable/img_rectangle32"/>
-            <LinearLayout android:gravity="start"
+                android:layout_marginBottom="@dimen/_8pxv"
+                android:scaleType="fitXY"
+                tools:ignore="ContentDescription"
+                tools:src="@drawable/img_rectangle32" />
+
+            <LinearLayout
                 android:id="@+id/linearColumndparagonbukitOne"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="@dimen/_7pxv"
-                android:layout_marginEnd="@dimen/_42pxh"
                 android:layout_marginStart="@dimen/_16pxh"
                 android:layout_marginTop="@dimen/_16pxv"
-                android:layout_weight="0.54" android:layout_width="0dp" android:orientation="vertical">
-                <TextView android:ellipsize="end"
+                android:layout_marginEnd="@dimen/_42pxh"
+                android:layout_marginBottom="@dimen/_7pxv"
+                android:layout_weight="0.54"
+                android:gravity="start"
+                android:orientation="vertical">
+
+                <TextView
                     android:id="@+id/txtDparagonbukitOne"
-                    android:layout_height="wrap_content"
+                    style="@style/txtRobotobold14"
                     android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
                     android:letterSpacing="0.01"
                     android:singleLine="true"
                     android:text="@{quanlydonhangVM.quanlydonhangModel.txtDparagonbukitOne}"
-                    style="@style/txtRobotobold14" tools:text="@string/msg_d_paragon_bukit"/>
-                <LinearLayout android:gravity="start"
+                    tools:text="@string/msg_d_paragon_bukit" />
+
+                <LinearLayout
                     android:id="@+id/linearRowratingbarOne"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginEnd="@dimen/_10pxh"
                     android:layout_marginTop="@dimen/_6pxv"
-                    android:layout_width="match_parent" android:orientation="horizontal">
+                    android:layout_marginEnd="@dimen/_10pxh"
+                    android:gravity="start"
+                    android:orientation="horizontal">
+
                     <androidx.appcompat.widget.AppCompatRatingBar
                         android:id="@+id/ratingBarRatingbarOne"
+                        style="@style/Widget.AppCompat.RatingBar.Small"
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginBottom="@dimen/_2pxv"
-                        android:layout_width="wrap_content"
                         android:numStars="4"
                         android:progressBackgroundTint="@color/orange_400"
                         android:progressTint="@color/orange_400"
-                        android:rating="4" style="@style/Widget.AppCompat.RatingBar.Small"/>
+                        android:rating="4" />
+
                     <FrameLayout
                         android:id="@+id/frameStackstarthirteen"
+                        android:layout_width="@dimen/_10pxh"
                         android:layout_height="@dimen/_10pxv"
-                        android:layout_marginBottom="@dimen/_2pxv" android:layout_width="@dimen/_10pxh">
-                        <ImageView android:id="@+id/imageStarThirteen"
-                            android:layout_gravity="start"
-                            android:layout_height="@dimen/_10pxh"
+                        android:layout_marginBottom="@dimen/_2pxv">
+
+                        <ImageView
+                            android:id="@+id/imageStarThirteen"
                             android:layout_width="@dimen/_10pxh"
+                            android:layout_height="@dimen/_10pxh"
+                            android:layout_gravity="start"
                             android:scaleType="fitXY"
                             android:src="@drawable/img_star13"
-                            tools:ignore="ContentDescription" tools:src="@drawable/img_star13"/>
-                        <ImageView android:id="@+id/imageStarFourteen"
-                            android:layout_gravity="top|end"
-                            android:layout_height="@dimen/_9pxh"
-                            android:layout_marginBottom="@dimen/_10pxv"
-                            android:layout_marginEnd="@dimen/_1pxh"
-                            android:layout_marginStart="@dimen/_10pxh"
+                            tools:ignore="ContentDescription"
+                            tools:src="@drawable/img_star13" />
+
+                        <ImageView
+                            android:id="@+id/imageStarFourteen"
                             android:layout_width="@dimen/_4pxh"
+                            android:layout_height="@dimen/_9pxh"
+                            android:layout_gravity="top|end"
+                            android:layout_marginStart="@dimen/_10pxh"
+                            android:layout_marginEnd="@dimen/_1pxh"
+                            android:layout_marginBottom="@dimen/_10pxv"
                             android:scaleType="fitXY"
                             android:src="@drawable/img_star8"
-                            tools:ignore="ContentDescription" tools:src="@drawable/img_star8"/>
+                            tools:ignore="ContentDescription"
+                            tools:src="@drawable/img_star8" />
                     </FrameLayout>
-                    <TextView android:ellipsize="end"
+
+                    <TextView
                         android:id="@+id/txt49980One"
+                        style="@style/txtRobotoregular10"
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="@dimen/_6pxh"
                         android:layout_marginTop="@dimen/_1pxv"
-                        android:layout_width="wrap_content"
+                        android:ellipsize="end"
                         android:singleLine="true"
                         android:text="@{quanlydonhangVM.quanlydonhangModel.txt49980One}"
-                        style="@style/txtRobotoregular10" tools:text="@string/lbl_4_9_980"/>
+                        tools:text="@string/lbl_4_9_980" />
                 </LinearLayout>
-                <LinearLayout android:gravity="start"
+
+                <LinearLayout
                     android:id="@+id/linearRowicons8bathtubOne"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginEnd="@dimen/_10pxh"
                     android:layout_marginStart="@dimen/_4pxh"
                     android:layout_marginTop="@dimen/_7pxv"
-                    android:layout_width="match_parent" android:orientation="horizontal">
-                    <ImageView android:id="@+id/imageIcons8bathtubOne"
-                        android:layout_height="@dimen/_10pxh"
-                        android:layout_marginBottom="@dimen/_3pxv"
-                        android:layout_marginTop="@dimen/_3pxv"
+                    android:layout_marginEnd="@dimen/_10pxh"
+                    android:gravity="start"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imageIcons8bathtubOne"
                         android:layout_width="@dimen/_10pxh"
+                        android:layout_height="@dimen/_10pxh"
+                        android:layout_marginTop="@dimen/_3pxv"
+                        android:layout_marginBottom="@dimen/_3pxv"
                         android:scaleType="fitXY"
                         android:src="@drawable/img_icons8bathtub"
-                        tools:ignore="ContentDescription" tools:src="@drawable/img_icons8bathtub"/>
-                    <TextView android:ellipsize="end"
+                        tools:ignore="ContentDescription"
+                        tools:src="@drawable/img_icons8bathtub" />
+
+                    <TextView
                         android:id="@+id/txtGroupThirteen"
+                        style="@style/txtSolidRounded"
+                        android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="@dimen/_1pxh"
                         android:layout_weight="0.51"
-                        android:layout_width="0dp"
-                        android:paddingBottom="@dimen/_1pxv"
+                        android:ellipsize="end"
                         android:paddingStart="@dimen/_3pxh"
                         android:paddingTop="@dimen/_2pxv"
+                        android:paddingBottom="@dimen/_1pxv"
                         android:singleLine="true"
                         android:text="@{quanlydonhangVM.quanlydonhangModel.txtGroupThirteen}"
-                        style="@style/txtSolidRounded" tools:text="@string/lbl_giamgia"/>
+                        tools:text="@string/lbl_giamgia" />
+
                     <View
-                        android:background="@drawable/rectangle_bg_gray_50_radius_8"
                         android:id="@+id/viewRectangleThirtySeven"
+                        android:layout_width="@dimen/_45pxh"
                         android:layout_height="@dimen/_16pxv"
-                        android:layout_marginStart="@dimen/_8pxh" android:layout_width="@dimen/_45pxh"/>
+                        android:layout_marginStart="@dimen/_8pxh"
+                        android:background="@drawable/rectangle_bg_gray_50_radius_8" />
                 </LinearLayout>
-                <TextView android:ellipsize="end"
+
+                <TextView
                     android:id="@+id/txtIndexProductOne"
+                    style="@style/txtRobotoregular10"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginEnd="@dimen/_10pxh"
                     android:layout_marginStart="@dimen/_5pxh"
                     android:layout_marginTop="@dimen/_2pxv"
-                    android:layout_width="wrap_content"
+                    android:layout_marginEnd="@dimen/_10pxh"
+                    android:ellipsize="end"
                     android:singleLine="true"
                     android:text="@{quanlydonhangVM.quanlydonhangModel.txtIndexProductOne}"
-                    style="@style/txtRobotoregular10" tools:text="@string/lbl_indexproduct"/>
-                <TextView android:ellipsize="end"
+                    tools:text="@string/lbl_indexproduct" />
+
+                <TextView
                     android:id="@+id/txtMotaOne"
+                    style="@style/txtRobotoregular10"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginEnd="@dimen/_10pxh"
                     android:layout_marginStart="@dimen/_4pxh"
                     android:layout_marginTop="@dimen/_11pxv"
-                    android:layout_width="wrap_content"
+                    android:layout_marginEnd="@dimen/_10pxh"
+                    android:ellipsize="end"
                     android:singleLine="true"
                     android:text="@{quanlydonhangVM.quanlydonhangModel.txtMotaOne}"
-                    style="@style/txtRobotoregular10" tools:text="@string/lbl_mota"/>
-                <TextView android:ellipsize="end"
+                    tools:text="@string/lbl_mota" />
+
+                <TextView
                     android:id="@+id/txtPriceOne"
-                    android:layout_gravity="end"
+                    style="@style/txtRobotomedium14"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginEnd="@dimen/_48pxh"
+                    android:layout_gravity="end"
                     android:layout_marginStart="@dimen/_48pxh"
                     android:layout_marginTop="@dimen/_6pxv"
-                    android:layout_width="wrap_content"
+                    android:layout_marginEnd="@dimen/_48pxh"
+                    android:ellipsize="end"
                     android:singleLine="true"
                     android:text="@{quanlydonhangVM.quanlydonhangModel.txtPriceOne}"
-                    style="@style/txtRobotomedium14" tools:text="@string/lbl_price"/>
+                    tools:text="@string/lbl_price" />
             </LinearLayout>
         </LinearLayout>
     </LinearLayout>
