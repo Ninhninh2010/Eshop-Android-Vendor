@@ -439,7 +439,7 @@
                         android:paddingTop="@dimen/_4pxv"
                         android:singleLine="true"
                         android:text="@={mainshopVM.mainshopModel.etAccountstabValue}"
-                        android:textColorHint="@color/deep_purple_A700"
+                        android:textColorHint="#673AB7"
                         style="@style/etGradientRounded" tools:ignore="Autofill"/>
                     <TextView android:ellipsize="end"
                         android:id="@+id/txtLanguage"
@@ -626,7 +626,7 @@
                         android:layout_marginStart="@dimen/_26pxh"
                         android:layout_weight="0.41"
                         android:layout_width="0dp"
-                        app:srcCompat="@drawable/img_home_deep_purple_a703" app:tint="@color/deep_purple_A703"/>
+                        app:srcCompat="@drawable/img_home_deep_purple_a703" app:tint="#673AB7"/>
                     <ImageView android:id="@+id/imageGlobe"
                         android:layout_height="@dimen/_31pxh"
                         android:layout_marginBottom="@dimen/_2pxv"
